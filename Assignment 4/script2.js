@@ -23,6 +23,8 @@ video1.onended = () =>{
 	video1.webkitExitFullscreen();
 	video1.style.visibility = "hidden";
 	gif.style.display = "inline";
+  go.style.display = "inline";
+
     setTimeout(() => {go.style.opacity = 1;
   }, 3000);
 }
