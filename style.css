@@ -1,0 +1,20 @@
+body
+{
+  background-color: black;
+  font-family: Geneva;
+  font-size: 16px;
+  margin: 2px;
+}
+
+a
+{
+  text-decoration: none;
+  color: white;
+}
+
+.go
+{
+  position: absolute;
+  top: 300px;
+  left: 550px;
+}

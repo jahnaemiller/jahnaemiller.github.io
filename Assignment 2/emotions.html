@@ -1,0 +1,26 @@
+<html>
+<head>
+  <link rel="stylesheet" href="emotionstyle.css">
+  <link rel="stylesheet" href="soundstyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+  <title>
+    Emotions
+  </title>
+</head>
+<body>
+<div id = "main">
+  <div class="alignright">
+    <a id="emotionspage" href="sound.html"><img class="backarrow" id='backarrow' onclick="mainpage();" src="left-arrow.png"></a>
+  <div class="container">
+    <div class="item" id="happy"> <div id="happylarge"><img id="hapimg" class="onhoverhappy" src="happy.png" onmouseover="chBackColor('#f9f990');" onclick="enlargehappy(); chBackColor('#f9f990');"><p> Happy</p></div> </div>
+    <div class="item" id="stressed"><img id="strimg" src="stressed.png"  onmouseover="chBackColor('#464845')"onclick="enlargestressed(); chBackColor('#464845');" class="onhoverstressed"><p> Stressed</p> </div>
+    <div class="item" id="sad"> <img id="sadimg" class="onhoversad" src="sad.png" onmouseover="chBackColor('#708E9E')" onclick="enlargesad(); chBackColor('#708E9E');"><p>Sad</p> </div>
+  </div>
+
+  <audio src="convohappy.wav" id="theAudio">
+  <audio src="convosad.wav" id="theAudio2">
+  <audio src="convoangry.wav" id="theAudio3">
+  <script src="emotionscript.js"></script>
+</div>
+</body>
+</html>
