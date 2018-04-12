@@ -19,6 +19,8 @@ video1.addEventListener("click", function(event) {
 go = document.getElementById("go2");
 
 video1.onended = () =>{
+  console.log("videodone");
+  video1.webkitExitFullscreen();
 	video1.style.visibility = "hidden";
   go.style.display = "inline";
   go.style.opacity = 1;
