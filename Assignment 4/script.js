@@ -7,7 +7,7 @@ video1.play();
 
 gif = document.getElementById("lgif");
 
-video1.addEventListener("click", function(event) { 
+video1.addEventListener("click", function(event) {
         if (video1.paused == true) {
              video1.play();
         }
@@ -24,7 +24,7 @@ video1.onended = () =>{
 	video1.style.visibility = "hidden";
 	gif.style.display = "inline";
   go.style.display = "inline";
-  
+
   setTimeout(() => {go.style.opacity = 1;
   }, 3000);
 }

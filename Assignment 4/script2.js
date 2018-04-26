@@ -7,7 +7,7 @@ video1.play();
 
 gif = document.getElementById("lgif");
 
-video1.addEventListener("click", function(event) { 
+video1.addEventListener("click", function(event) {
         if (video1.paused == true) {
              video1.play();
         }
