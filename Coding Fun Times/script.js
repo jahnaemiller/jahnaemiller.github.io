@@ -1,6 +1,10 @@
 let banner = document.getElementById("enter");
 let audio = document.getElementById("stillness");
 let response = document.getElementById("response");
+let video = document.getElementById("ivideo");
+let container = document.getElementById("cont");
+
+audio.loop = true;
 
 banner.onclick = function()
 {
@@ -14,19 +18,24 @@ banner.onclick = function()
 let mute = document.getElementById("mute");
 let vol = document.getElementById("vol");
 
+function lowerVolume()
+{
+  audio.volume -= 0.25;
+}
+
+function raiseVolume()
+{
+  audio.volume += 0.25;
+}
+
 mute.onclick = function()
 {
-  audio.pause();
+  lowerVolume();
 }
 
 vol.onclick = function()
 {
-  audio.play();
-}
-
-audio.onended = function()
-{
-  audio.loop();
+  raiseVolume();
 }
 
 response.onmouseover = function()
@@ -43,5 +52,12 @@ response.onmouseout = function()
 
 response.onclick = function()
 {
-  window.location.href = "https://www.youtube.com/watch?v=LB871SVYMhI";
+  audio.pause();
+  ivideo.style.display = "block";
+  container.style.opacity = "0";
+  response.style.border = "none";
+  response.style.height = "0px";
+  response.style.opacity = "0";
+
+  setTimeout(function() {response.style.display = "none"; container.style.display = "none"; ivideo.style.marginTop = "5%";}, 150);
 }
