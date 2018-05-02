@@ -48,11 +48,21 @@ h1
   font-size: 18px;
 }
 
+.castcrew img {
+  width: 30%;
+}
+
+.castcrew div {
+  width: 50%;
+  float: right;
+  display: block;
+}
+
 .carousel
 {
   padding: 3%;
-  width: 50%;
-  height: 400px;
+  width: 60%;
+  height: auto;
   margin: 0 auto;
   position: relative;
   cursor: pointer;
@@ -61,13 +71,16 @@ h1
 .slides
 {
   width: 100%;
-  height: inherit;
+  height: auto;
+  overflow: hidden;
 }
 
 .slides img
 {
-  width:  100%;
-  height: inherit;
+  width: 100%;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .numbertext
@@ -77,5 +90,6 @@ h1
   padding: 8px 12px;
   position: absolute;
   top: 8%;
+  left: 5%;
   background-color: rgba(0, 0, 0, 0.5);
 }
