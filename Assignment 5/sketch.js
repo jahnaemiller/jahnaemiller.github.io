@@ -19,6 +19,7 @@ var textVelocity = 0;
 var instructionsRead = false;
 var transparency = 0;
 var darken;
+var videoTransparency = 0;
 
 function preload()
 {
@@ -39,6 +40,7 @@ function setup(){
   darken.style("background-color", "black");
   darken.size(windowWidth, windowHeight);
   darken.position(0, 0);
+  video.style("opacity", videoTransparency);
   video.hide();
   darken.hide();
   textFont("Pangolin");
@@ -148,18 +150,25 @@ function draw()
     textSize(18);
     text(correctText, bottleX - bottle.width/2, bottleY - 50);
     cursor(ARROW);
-    transparency += 0.02;
-    darken.show();
 
-    if (transparency > 0.5)
+    if (transparency <= 0.70)
     {
-      transparency = 0.5;
+      transparency += 0.02;
     }
 
-    if (millis() - currentTime > 1400)
+    darken.show();
+
+
+    if (millis() - currentTime > 1000)
     {
-      video.show();
+      if (videoTransparency <= 1)
+      {
+        videoTransparency += 0.02;
+      }
+
       video.position(width/3 - 50, height/12);
+      video.style("opacity", videoTransparency);
+      video.show();
       console.log('changing bg image');
     }
   }
