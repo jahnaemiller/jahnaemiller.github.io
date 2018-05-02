@@ -1,6 +1,6 @@
 var win = false;
-var bottleX = 675;
-var bottleY = 130;
+var bottleX = 0;
+var bottleY = 0;
 var overBottle = false;
 var dragging = false;
 var xOffset = 0;
@@ -31,9 +31,11 @@ function preload()
 function setup(){
   createCanvas(windowWidth, windowHeight);
   background(255);
-  video.size(500, 350);
+  video.size(windowWidth/2.56, windowHeight/1.93);
   video.hide();
   textFont("Pangolin");
+  bottleX = windowWidth/1.87;
+  bottleY = windowHeight/5.0;
 }
 
 function draw()
@@ -41,13 +43,13 @@ function draw()
   background(bg);
   fill(255);
   textSize(140);
-  text("REUNION", 360, height/2 - 100 + textVelocity);
+  text("REUNION", windowWidth/3.5, height/2 - 100 + textVelocity);
   fill(0);
   textSize(18);
 
   if (instructionsRead == false)
   {
-    text("kind soul! if it pleases you, carry me to my correct abode.", 520, height/2 - 220)
+    text("kind soul! if it pleases you, carry me to my correct abode.", bottleX - 150, bottleY - 20)
   }
 
   if (win == false)
@@ -140,8 +142,10 @@ function draw()
 
     if (millis() - currentTime > 1400)
     {
+      bg = loadImage("darkgray.jpeg");
       video.show();
       video.position(width/3 - 50, height/12);
+      console.log('changing bg image');
     }
   }
 }
