@@ -17,6 +17,8 @@ var currentTime = 0;
 var video;
 var textVelocity = 0;
 var instructionsRead = false;
+var transparency = 0;
+var darken;
 
 function preload()
 {
@@ -25,6 +27,7 @@ function preload()
   video = createDiv('<iframe width="560" height="315" src="https://www.youtube.com/embed/LB871SVYMhI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
   video.hide();
   bg = loadImage("gray.jpeg");
+  darken = createDiv();
 }
 
 
@@ -32,7 +35,12 @@ function setup(){
   createCanvas(windowWidth, windowHeight);
   background(255);
   video.size(windowWidth/2.56, windowHeight/1.93);
+  video.style("z-index", 3);
+  darken.style("background-color", "black");
+  darken.size(windowWidth, windowHeight);
+  darken.position(0, 0);
   video.hide();
+  darken.hide();
   textFont("Pangolin");
   bottleX = windowWidth/1.87;
   bottleY = windowHeight/5.0;
@@ -46,6 +54,7 @@ function draw()
   text("REUNION", windowWidth/3.5, height/2 - 100 + textVelocity);
   fill(0);
   textSize(18);
+  darken.style('opacity', transparency);
 
   if (instructionsRead == false)
   {
@@ -139,10 +148,16 @@ function draw()
     textSize(18);
     text(correctText, bottleX - bottle.width/2, bottleY - 50);
     cursor(ARROW);
+    transparency += 0.02;
+    darken.show();
+
+    if (transparency > 0.5)
+    {
+      transparency = 0.5;
+    }
 
     if (millis() - currentTime > 1400)
     {
-      bg = loadImage("darkgray.jpeg");
       video.show();
       video.position(width/3 - 50, height/12);
       console.log('changing bg image');
