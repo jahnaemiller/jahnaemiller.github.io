@@ -25,7 +25,7 @@ function preload()
 {
   bottle = loadImage("bottle.png");
   bin = loadImage("bin.png");
-  video = createDiv('<iframe width="560" height="315" src="https://www.youtube.com/embed/UUDEIu187eE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
+  video = createDiv('<iframe width="560" height="315" src="https://www.youtube.com/embed/oD0Ds5GtpmQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
   video.hide();
   bg = loadImage("gray.jpeg");
   darken = createDiv();
