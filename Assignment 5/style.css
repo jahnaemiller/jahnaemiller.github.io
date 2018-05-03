@@ -1,0 +1,95 @@
+.button {
+    background-color: #696969;
+    border: #696969 1px solid;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    font-family: Pangolin;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    top: 10%;
+    right: 15%;
+}
+
+.button a
+{
+  text-decoration: none;
+  color: white;
+}
+
+.button:hover {
+    background-color: #A9A9A9;
+    color: white;
+
+}
+
+body
+{
+  background-image: url("gray.jpeg");
+}
+
+h1
+{
+  font-size: 3.5em;
+}
+.main
+{
+  width: 80%;
+  margin: 0 auto;
+  font-family: Pangolin;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.castcrew img {
+  width: 30%;
+}
+
+.castcrew div {
+  width: 50%;
+  float: right;
+  display: block;
+}
+
+.carousel
+{
+  padding: 3%;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.slides
+{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.slides img
+{
+  width: 100%;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.numbertext
+{
+  color: #f2f2f2;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
