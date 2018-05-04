@@ -1,3 +1,9 @@
+/*jahnae miller
+  sketch for comm lab portfolio
+  ver. 1 - friday, may 4.
+*/
+
+
 var stars = [];
 var glow = 0;
 var growFactor = 0.02;
@@ -34,12 +40,12 @@ var info4;
 var info5;
 
 var lasersList = [];
-var numLasers = 0;
 var timeSinceLastLaser = 0;
 
 var windowOpen = false;
 var iconHit = false;
 
+//triggers the pop up of the info boxes
 function infoPopUp(x)
 {
   windowOpen = true;
@@ -71,6 +77,7 @@ function infoPopUp(x)
 }
 
 
+//function/object used to emulate a class
 function lasers(_angle, _speed)
 {
   this.angle = _angle;
@@ -91,14 +98,11 @@ function lasers(_angle, _speed)
     this.y = this.y + this.ySpeed;
   }
 
+  //draw lasers
   this.render = function()
   {
     stroke(255, 0, 0);
     fill(255, 0, 0);
-    /*ellipse(this.x, this.y, 3, 3);
-    push();
-    rotate(this.angle);
-    pop();*/
 
     rect(this.x, this.y, 3, 3);
     push();
@@ -109,6 +113,7 @@ function lasers(_angle, _speed)
     fill(255);
   }
 
+  //check if they are offscreen
   this.offscreen = function()
   {
     if (this.x < 0 || this.x > width || this.y < 0 || this.y > height)
@@ -121,6 +126,7 @@ function lasers(_angle, _speed)
     }
   }
 
+  //collision check for icon boxes
   this.checkCollisionIco1 = function()
   {
     if (this.x >= icon1_x && this.x <= icon1_x + icon1.width && this.y >= icon1_y && this.y <= icon1_y + icon1.height)
@@ -187,11 +193,13 @@ function lasers(_angle, _speed)
   }
 }
 
+//function to generate random number
 function getRandomInt(min, max)
 {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+//star object
 function star()
 {
   this.x = getRandomInt(30, width);
@@ -243,12 +251,14 @@ function setup() {
   info4.hide();
   info5.hide();
 
+  //positioning of info boxes
   info1.position(icon1_x - 250, icon1_y - icon1.width/8);
   info2.position(icon2_x, icon2_y - 160);
   info3.position(icon3_x, icon3_y - 160);
   info4.position(icon4_x, icon4_y - 160);
   info5.position(icon5_x, icon5_y - 160);
 
+  //styling of info boxes
   info1.style("font-family: 'VT323', monospace");
   info1.style("background-color: rgba(255, 255, 255, 0.5)");
   info1.style("border-radius: 2px");
@@ -324,11 +334,13 @@ function draw()
     ellipse(stars[i].x, stars[i].y, 3 + glow, 3 + glow);
   }
 
+  //makes stars grow
   if ((millis() - currentTime) < 2000)
   {
     glow += growFactor;
   }
 
+  //makes stars shrink. in conjuction with above, gives appearance of twinkling.
   if (millis() - currentTime >= 2500)
   {
     currentTime = millis();
@@ -341,6 +353,7 @@ function draw()
   image(icon4, icon4_x, icon4_y);
   image(icon5, icon5_x, icon5_y);
 
+  //rotate the ship according to mouse
   push();
   translate(width/2, height/2);
   rotate(angle);
@@ -349,6 +362,7 @@ function draw()
   fill(255);
   pop();
 
+  //pause game if a window is open
   if (windowOpen == false)
   {
     angle = atan2(mouseY - height * 0.5, mouseX - width * 0.5);
@@ -397,6 +411,7 @@ function draw()
       }
     }
 
+    //remove all lasers from screen if an info box is open
     if (iconHit == true)
     {
       for (var i = lasersList.length - 1; i >= 0; i--)
@@ -406,17 +421,17 @@ function draw()
       }
     }
 
+    //shoots lasers, timer because of mouseClick echo
     if (mouseIsPressed && millis() - timeSinceLastLaser > 300 && millis() - restartTimer > 300)
     {
       lasersList.push(new lasers(angle, 4));
-      numLasers++ ;
       timeSinceLastLaser = millis();
     }
   }
 }
-//triangle(width/2 - 10, height/2,  width/2,  height/2 - 20,  width/2 + 10, height/2);
 
 
+//functions for redirection
 function goToWebsite()
 {
   window.open("https://jahnaemiller.github.io/Assignment 1/landing.html", "_self");
@@ -442,6 +457,7 @@ function goToAnimation()
   window.open("https://jahnaemiller.github.io/Assignment 5/index.html", "_self");
 }
 
+//closes info box
 function closeWindow()
 {
   if (windowOpen == true)
