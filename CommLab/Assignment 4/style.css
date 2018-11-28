@@ -1,0 +1,91 @@
+body
+{
+    font-family: 'Coming Soon', cursive;
+    font-size: 15px;
+    overflow: hidden;
+    background-color: #3a4664;
+}
+
+.main
+{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    background-color: white;
+}
+
+.vid
+{
+    position: absolute;
+    top: 35%;
+    left: 40%;   
+    display: block;
+}
+
+svg
+{
+    z-index: -1;
+    max-width: 60%;
+}
+
+.dont {
+    position: fixed;
+    text-align: center;
+    bottom: 20px;
+    right: 60px;
+    width: 200px;
+    font-size: 20px;
+    background-color: #EF84A8;
+    border: 3px solid #EF84A8;
+    opacity: 1s;
+    transition: opacity 1s linear;
+    z-index: 3;
+}
+
+.dont a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.gif img
+{
+    width: 70%;
+}
+
+.gif
+{
+    z-index: 2;
+    position: absolute;
+    top: 2%;
+    left: 15%;
+    display: none;
+}
+
+.goto
+{
+    z-index: 3;
+    position: absolute;
+    text-align: center;
+    top: 48%;
+    left: 45%;
+    width: 200px;
+    font-size: 20px;
+    color: black;
+    background-color: #EF84A8;
+    border: 3px solid #EF84A8;
+    opacity: 0;
+    display: none;
+    transition: opacity 1s linear;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.infotext
+{
+    text-align: centre;
+    padding-top: 20%;
+    font-size: 25px;
+    padding-bottom: 20%;
+   /* min-height: 500px;*/
+}

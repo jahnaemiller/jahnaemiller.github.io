@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jahnae miller</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+        <!-- Media query for narrow browser width -->
+        <link rel="stylesheet" media="only screen and (max-width: 480px)" href="../mobile.css">
+
+        <!-- Media query for medium browser width -->
+        <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="../tablet.css">
+
+        <!-- Media query for full browser width -->
+        <link rel="stylesheet" media="only screen and (min-width: 961px)" href="../desktop.css">
+
+        <!-- Prevent smartphones from scaling pages down -->
+        <meta name="viewport" content="initial-scale=1"> 
+    </head>
+    
+    <body>
+        <div id="main">
+            <div class="container">
+                <a href="../index.html"><button class="tablink">home.c</button></a>
+                <button class="tablink active">about.c</button>
+                <a href="../cs/index.html"><button class="tablink">cs.c</button></a>
+                <a href="../math/index.html"><button class="tablink">math.c</button></a>
+                <a href="../im/index.html"><button class="tablink">im.c</button></a>
+            </div>
+            <div class="cs tabcontent">
+                <div class="outer">
+                    <span class="keyword">#include</span> <span class="string">"interests.h"</span><br>
+                    <span class="keyword">#include</span> <span class="string">"education.h"</span><br>
+                    <span class="keyword">#include</span> <span class="string">"arabic101.h"</span>
+                </div>
+                
+
+                <div class="outer">
+                        <span class="keyword">class</span> <span class="variable">about me</span>
+                        <br>{
+                           <div class="inner">
+                               <span class="keyword">this</span>.<span class="variable">name</span> =
+                               <span class="string">jahnae</span>; <br>
+                               <span class="keyword">this</span>.<span class="variable">school</span> =
+                               <span class="string">newYorkUniversityAbuDhabi</span>; <br>
+                               <span class="keyword">this</span>.<span class="variable">major</span> =
+                               <span class="string">computerScience</span>; <br>
+                               <span class="keyword">this</span>.<span class="variable">minor</span> =
+                               <span class="string">appliedMath</span> + <span class="string">interactiveMedia</span>; <br>
+                               <span class="keyword">this</span>.<span class="variable">interests</span> =
+                               <span class="string">coding</span> + <span class="string">videoGames</span>; <br><br>
+                                <span class="comment">//hello! my name is jahnae. i'm a computer science major from new york abu dhabi. right now, i'm in studying away in new york.</span>
+                            </div>
+                            }
+                    </div>
+                    <div class="outer">
+                        <span class="keyword">void</span> <span class="variable">toArabic</span>()
+                        <br>{
+                        <div class="inner arabic">
+                            <span class="keyword">هذه</span>.<span class="variable">اللغة</span> =
+                               <span class="keyword">العربية؛</span><br>
+                        <br>
+                            <span class="comment">
+                            ة//اهلا وسهلا! انا اسمي جاني وانا طالبة في جامعة نيو يورك ابو ظبي والآن، اسكن في مدينة نيو يورك
+                             <div class="paraimg onTabDesk"><img src="me.png"></div>       
+                            <div class="half">ة//انا من مدينة  كينغستون في جامايكا. انا بحب الشاي و ما بحب الحليب وعندي كلب كبير اسمه كلاوز //</div>
+         <br>                      <div class="half two">ة//انا متخصص في علوم الكمبيوتر وادرس الرياضيات و الوسائل التفاعليه ايضا</div></span>
+                        </div>
+                        <br>
+                            <div class="paraimg onMobile"><img src="me.png"></div>
+                        <div class="end">}</div>
+                    </div>
+                
+                    
+                <div class="outer">
+                        <span class="keyword">void</span> <span class="variable">backToEnglish</span>()
+                        <br>{
+                           <div class="inner">
+                               <span class="keyword">this</span>.<span class="variable">language</span> =
+                               <span class="keyword">english</span>; <br>
+                                <br>
+                                <span class="comment">/* back to the usual left-alignment! i started learning arabic this semester, so i wanted to show it off a bit. because of the direction it's read in, i had to adapt some of my design decisions. it really lead to me to think about things i normally take for granted. */</span>
+                            </div>
+                            }
+                    </div>
+                </div>
+            <div class="navigation">
+                <a href="../index.html">home</a> |
+                <span class="actlink"> about</span> |
+                <a href="../cs/index.html">cs </a>|
+                <a href="../math/index.html"> math</a> |
+                <a href="../im/index.html"> im</a>
+            </div>
+        </div>
+    </body>
+</html>

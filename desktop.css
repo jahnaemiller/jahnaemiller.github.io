@@ -1,0 +1,171 @@
+/* Style the tab buttons */
+
+html
+{
+    background-color: slategray;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#main
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tablink 
+{
+    background-color: white;
+    color: rgb(161, 178, 201);
+    float: left;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 15px;
+    width: 15%;
+    text-align: left;
+    border-right: rgb(224, 225, 229) 1px solid;
+}
+
+.container
+{
+    background-color: white;
+}
+
+.active
+{
+    color: rgb(111, 121, 136);
+    border-bottom: rgb(251, 108, 44) solid 1px;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover 
+{
+    border-bottom: rgba(251, 108, 44, 0.5) solid 1px;
+}
+
+.tabcontent 
+{
+    color: rgb(80, 86, 91);
+    padding: 20px;
+    padding-left: 50px;
+    text-align: left;
+    background-color: white;
+    clear: both;
+    font-size: 13px;
+}
+
+body
+{
+    color: white;
+}
+
+.keyword
+{
+    color: rgb(251, 108, 44);
+}
+
+.variable
+{
+    color: rgb(104, 183, 215);
+}
+
+
+.string
+{
+    color: rgb(126, 177, 0);
+}
+
+.comment
+{
+    color: rgb(155, 160, 167);
+    font-style: italic;
+}
+
+.outer
+{
+    padding: 20px;
+    padding-left: 0px;
+}
+
+.inner
+{
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div img
+{
+    margin-top: 30px;
+    width: 48%;
+    height: 300px;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.navigation
+{
+    text-align: center;
+    display: none;
+}
+
+.actlink
+{
+    font-weight: bold;
+}
+
+.arabic
+{
+    text-align: right;
+}
+
+.half
+{
+    width: 55%;
+    margin: 50px 0px;
+    margin-bottom: 20px;
+    padding: 5px 0px;
+    text-align: right;
+    position: relative;
+    top: 50px;
+}
+
+.two
+{
+    top: 60px;
+}
+
+.paraimg
+{
+    float: right;
+    width: 40%;
+}
+
+.paraimg img
+{
+    width: 100%;
+    height: 300px;
+}
+
+.end
+{
+    clear: both;
+}
+
+.onMobile
+{
+    display: none;
+}
+
+.comment a
+{
+    color: rgb(155, 160, 167);
+    font-style: italic;
+    text-decoration: underline;
+}

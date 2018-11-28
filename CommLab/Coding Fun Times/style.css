@@ -1,0 +1,64 @@
+body
+{
+  font-family: 'Do Hyeon', sans-serif;
+  background-color: grey;
+  overflow: hidden;
+}
+
+.main
+{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.banner
+{
+  text-align: center;
+  width: 60%;
+  margin: 30% auto;
+  background-color: black;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  transition: all 1.0s linear;
+}
+
+.volcont
+{
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 15%;
+  opacity: 1;
+  transition: all linear 0.25s;
+}
+
+.volcont img
+{
+  width: 5%;
+  transition: all linear 0.5s;
+}
+
+.volcont img:hover
+{
+  width: 6%;
+}
+
+.volcont div
+{
+  display: inline;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.responstext
+{
+  border: 1px solid black;
+  width: 40%;
+  font-size: 30px;
+  text-align: center;
+  margin: 10% auto;
+  cursor: pointer;
+  opacity: 1;
+  transition: all linear 1s;
+  overflow: hidden;
+}
