@@ -430,31 +430,30 @@ function draw()
   }
 }
 
-
 //functions for redirection
 function goToWebsite()
 {
-  window.open("https://jahnaemiller.github.io/Assignment 1/landing.html", "_self");
+  window.open("https://jahnaemiller.github.io/CommLab/Assignment 1/landing.html", "_self");
 }
 
 function goToSound()
 {
-  window.open("https://jahnaemiller.github.io/Assignment 2/sound.html", "_self");
+  window.open("https://jahnaemiller.github.io/CommLab/Assignment 2/sound.html", "_self");
 }
 
 function goToComic()
 {
-  window.open("https://jahnaemiller.github.io/Assignment 3/index.html", "_self");
+  window.open("https://jahnaemiller.github.io/CommLabAssignment 3/index.html", "_self");
 }
 
 function goToVideo()
 {
-  window.open("https://jahnaemiller.github.io/Assignment 4/index.html", "_self");
+  window.open("https://jahnaemiller.github.io/CommLab/Assignment 4/index.html", "_self");
 }
 
 function goToAnimation()
 {
-  window.open("https://jahnaemiller.github.io/Assignment 5/index.html", "_self");
+  window.open("https://jahnaemiller.github.io/CommLab/Assignment 5/index.html", "_self");
 }
 
 //closes info box
