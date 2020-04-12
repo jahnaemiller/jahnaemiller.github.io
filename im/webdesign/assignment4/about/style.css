@@ -1,0 +1,115 @@
+#main
+{
+    padding-bottom: 10%;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.40);
+    overflow-y: auto;
+}
+
+#main div
+{
+    text-align: left;
+    width: 25%;
+    margin: 0 auto;
+}
+
+
+.tab
+{
+    width: 79%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.55);
+    padding: 0.5%;
+    border-radius: 8px 8px 0px 0px;
+    cursor: default;
+}
+
+a:link
+{
+    opacity: 0.70;
+    color: black;
+    text-decoration: none;
+    
+}
+
+a:visited
+{
+    color: #686868;
+}
+
+a:hover
+{
+    font-size: 18px;
+    opacity: 1;
+    
+    -webkit-transition: font-size 0.5s linear;
+    transition: font-size 0.5s linear;
+    
+    -webkit-transition: opacity 0.25s linear;
+    transition: opacity 0.25s linear;
+}
+
+a:active
+{
+    color: #B8B1B1;
+}
+
+p
+{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5
+{
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+}
+
+h6
+{
+    font-family: "HelveticaNeue-Light";
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+body
+{
+    background-color: rgb(90, 200, 250);
+    height: 65vh;
+}
+
+table
+{
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table tr, table td
+{
+    border: 1px solid #000000;
+}
+
+table td
+{
+    padding: 5px;
+}
+
+img
+{
+    opacity: 0.80;
+    -webkit-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+}
+
+img:hover
+{
+    opacity: 1;
+    -webkit-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+}

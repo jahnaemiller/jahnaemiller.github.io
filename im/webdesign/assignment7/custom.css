@@ -1,0 +1,142 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+
+.navbar-light {
+    background-color: #272b2e;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+
+.navbar-light .nav-item.active .nav-link,
+.navbar-light .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+.navbar-light .navbar-toggler {
+    background-color: white;
+}
+.navbar-light .icon-bar {
+    color:white;
+}
+
+.flex-column .navlink
+{
+   padding: 3rem;
+}
+
+.left
+{
+    padding-right: 0px;
+
+}
+
+@media (min-width: 576px){
+
+.right
+{
+    background-color: black;
+    margin-left: 0px !important;
+    overflow-y: scroll;
+    position: relative;
+    height: 90vh;
+    color: white;
+}
+}
+
+@media (min-width: 576px) {
+    .inner
+{
+    height: 100%;
+}
+    
+}
+
+.inner
+{
+    padding-top: 30px;
+}
+
+
+.col-1 a
+{
+    font-size: 0.9em !important;
+}
+
+.fix
+{
+    max-height: 5vh;
+    color: white;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link
+{
+    border-radius: 0px;
+    color: white;
+}
+
+.nav-pills .nav-link.active {
+    background-color: black;
+}
+
+.nav
+{
+    background-color: rgb(39, 44, 49);
+}
+
+.item img {
+    height: 450px !important;
+    width: 850px !important;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+.top
+{
+    margin-top: 30px;
+}
+
+.col-4
+{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.col-12
+{
+    text-align: center;
+}
+
+.inner
+{
+    text-align: left;
+}
+
+.btn{
+    white-space:normal !important;
+    word-wrap: break-word; 
+}
+
+.nav .nav-link:focus, .nav .nav-link:hover {
+    color: #ccc !important;
+}
+
+.badge {
+    min-width: 28px;
+    border-radius: 2px;
+    font-size: 0.6em;
+}

@@ -1,0 +1,269 @@
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    opacity: 0.75;
+}
+
+.button:hover
+{
+    opacity: 0.90;
+}
+
+.button4 
+{
+    background-color: #e7e7e7; 
+    color: black;
+    border-radius: 5px;
+}
+
+table
+{
+    table-layout: fixed;
+}
+            
+body
+{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#main
+{
+    padding-bottom: 10%;
+    width: 80%;
+    height: 0px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.40);
+    transition: height 1.5s linear;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#main2
+{
+    padding-bottom: 10%;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.40);
+    overflow-y: auto;
+}
+
+#main2 div
+{
+    text-align: left;
+    width: 25%;
+    margin: 0 auto;
+}
+
+.tab2
+{
+    width: 79%;
+    margin: 0 auto;
+    margin-top: 2%;
+    background-color: rgba(255, 255, 255, 0.55);
+    padding: 0.5%;
+    border-radius: 8px 8px 0px 0px;
+    cursor: default;
+}
+
+#below
+{
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.40);
+    overflow-y: auto;
+    padding: 0 0;
+}
+
+.topic
+{
+    font-size: 18px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+
+.tab
+{
+    width: 29%;
+    margin-top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.55);
+    padding: 0.5%;
+    border-radius: 8px 8px 0px 0px;
+    text-align: left;
+}
+
+a:link
+{
+    opacity: 0.70;
+    color: black;
+    text-decoration: none;
+    
+}
+
+a:visited
+{
+    color: #686868;
+}
+
+a:hover
+{
+    font-size: 18px;
+    opacity: 1;
+    
+    -webkit-transition: font-size 0.5s linear;
+    transition: font-size 0.5s linear;
+    
+    -webkit-transition: opacity 0.25s linear;
+    transition: opacity 0.25s linear;
+}
+
+a:active
+{
+    color: #B8B1B1;
+}
+
+p
+{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5
+{
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    margin-top: 0;
+}
+
+h6
+{
+    font-family: "HelveticaNeue-Light";
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+body
+{
+    background-color: rgb(90, 200, 250);
+    height: 65vh;
+}
+
+table
+{
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table tr, table td
+{
+    border: 1px solid #000000;
+}
+
+table td
+{
+    padding: 5px;
+}
+
+img
+{
+    opacity: 0.80;
+    -webkit-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+}
+
+img:hover
+{
+    opacity: 1;
+    -webkit-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+}
+
+#first
+{
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#second
+{
+    overflow: hidden;
+    width: 0%;
+    margin: 0 auto;
+    margin-top: 2%;
+    transition: width 1.75s linear;
+}
+
+.hiddenText
+{
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+.container {
+  width: 300px;
+  margin: 25px auto;
+}
+
+form {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.40);
+  color: black;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+form label,
+form input,
+form button {
+  border: 0;
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+}
+
+form input {
+  height: 25px;
+  line-height: 25px;
+  background: #fff;
+  color: #000;
+  padding: 0 6px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+form .error {
+  color: #ff0000;
+}
+
+form button {
+  height: 30px;
+  line-height: 30px;
+  background-color: rgba(255, 255, 255, 0.55);
+  color: black;
+  margin-top: 10px;
+  cursor: pointer;
+}

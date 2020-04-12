@@ -1,0 +1,343 @@
+body
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+}
+
+.banner
+{
+    width: 100%;
+    height: 20vh;
+}
+
+.banner img
+{
+    width: 100%;
+    height: 20vh;
+}
+
+.container
+{
+    height: 90vh;
+}
+
+#main
+{
+    margin-left: 20px;
+    height: 95%;
+}
+
+.sidebar
+{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+    margin-left: 0px;
+    padding: 10px;
+    border: black solid 2px;
+    height: 95%;
+}
+
+#announcements
+{
+    overflow-y: scroll;
+    height: 90%;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+
+#announcements::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+#announcements div
+{
+    border-top: black solid 1px;
+}
+
+.right
+{
+    padding-left: 10px;
+    width: 65%;
+    display: inline-block;
+    height: 95%;
+}
+
+h6
+{
+    font-size: 14px;
+    margin: 5px 0px;
+}
+
+.nav-pane
+{
+    border-top: black solid 2px;
+    border-bottom: black solid 2px;
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    line-height: 1.8;
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
+    top: 5px;
+}
+
+.nav-button
+{
+  float: left;
+  width: 20%;
+}
+
+.nav-pane a
+{
+    color: black;
+    text-align: center;
+    padding: 3px 10px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.nav-pane a:hover
+{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    color: black;
+}
+
+.nav-pane a.active
+{
+    color: white;
+    background-color: black;
+}
+
+h1
+{
+    font-size: 36px;
+    margin-top: 5px;
+}
+
+div p
+{
+    font-size: 14px
+}
+
+.sidebar-mob-tab
+{
+    display: none;
+}
+
+.contact-mob-tab
+{
+    display: none;
+}
+
+@media screen and (max-width: 480px)
+{
+    .body
+    {
+        font-size: 10px;
+    }
+    
+    h1
+    {
+        font-size: 20px;
+        margin-top: 2px;
+    }
+
+    div p
+    {
+        font-size: 10px
+    }
+    
+    
+    .banner
+    {
+        display: none;
+    }
+    
+    .sidebar-mob-tab
+    {
+        display: inline-block;
+        height: 30vh;
+        border: 1px solid black;
+        padding: 5px;
+        overflow: hidden;
+    }
+    
+    .container
+    {
+        height: auto;
+    }
+    
+    .sidebar
+    {
+        display: none;
+    }
+    
+    .right
+    {
+        width: 100%;
+        padding: 2px;
+    }
+    
+    .nav-pane
+    {
+        position: -webkit-sticky;
+        position: sticky;
+    }
+    
+    .nav-button
+    {
+      float: left;
+      width: 20%;
+    }
+    
+    .nav-pane a
+    {
+        color: black;
+        text-align: center;
+        padding: 3px 5px;
+        text-decoration: none;
+        font-size: 1.0em;
+    }
+
+    .nav-pane a:hover
+    {
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        color: black;
+    }
+    
+    .contact-mob-tab
+    {
+        display: inline-block;
+    }
+    
+    .contact-desk
+    {
+        display: none;
+    }
+    
+    #announcements-mob-tab
+    {
+        overflow-y: scroll;
+        height: 80%;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* IE 10+ */
+    }
+
+    #announcements-mob-tab::-webkit-scrollbar { /* WebKit */
+        width: 0;
+        height: 0;
+    }
+
+    #announcements-mob-tab div
+    {
+        border-top: black solid 1px;
+    }
+    
+    #main
+    {
+        height: auto;
+        margin-top: 8px;
+        margin-left: 0px;
+    }
+    
+    h6
+    {
+        font-size: 10px;
+    }
+    
+    h2
+    {
+        font-size: 20px;
+        margin: 8px;
+    } 
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 960px)
+{
+    .body
+    {
+        font-size: 12px;
+    }
+    
+    h1
+    {
+        font-size: 26px;
+        margin-top: 2px;
+    }
+
+    div p
+    {
+        font-size: 12px
+    }
+    
+    .banner
+    {
+        display: none;
+    }
+    
+    .sidebar-mob-tab
+    {
+        display: inline-block;
+        height: 30vh;
+        border: 1px solid black;
+        padding: 5px;
+    }
+    
+    .container
+    {
+        height: auto;
+    }
+    
+    .sidebar
+    {
+        display: none;
+    }
+    
+    .right
+    {
+        width: 100%;
+        padding: 5px;
+    }
+    
+    .contact-mob-tab
+    {
+        display: inline-block;
+    }
+    
+    .contact-desk
+    {
+        display: none;
+    }
+    
+    #announcements-mob-tab
+    {
+        overflow-y: scroll;
+        height: 80%;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* IE 10+ */
+    }
+
+    #announcements-mob-tab::-webkit-scrollbar { /* WebKit */
+        width: 0;
+        height: 0;
+    }
+
+    #announcements-mob-tab div
+    {
+        border-top: black solid 1px;
+    }
+    
+    #main
+    {
+        height: auto;
+        margin-top: 8px;
+        margin-left: 0px;
+    }        
+}
